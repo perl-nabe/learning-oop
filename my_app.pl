@@ -12,6 +12,10 @@ use Data::Printer {deparse => 1};
 my $app = MyApp->new;
 p $app;
 
+say $app->_bar;
+
+say &{${MyApp::hoge}};
+
 say $app->bar;
 $app->foo('ふぉー');
 say $app->foo;
