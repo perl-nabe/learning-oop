@@ -9,15 +9,15 @@ use MyApp2;
 use Data::Printer {deparse => 1};
 
 
-my $app = MyApp->new;
+my $app = MyApp->new(foo => 'ふぁー');
 p $app;
 
 say $app->_bar;
 
 say &{${MyApp::hoge}};
 
-say $app->bar;
-$app->foo('ふぉー');
+say $app->bar('ほげ');
+# $app->foo('ふぉー');
 say $app->foo;
 
 my $app2 = MyApp2->new;

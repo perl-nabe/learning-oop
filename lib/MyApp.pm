@@ -13,7 +13,9 @@ sub _bar {
 }
 
 sub bar {
-    return 'bar ですよ';
+    shift;
+    return @_;
+    # return 'bar ですよ';
 }
 
 1;
